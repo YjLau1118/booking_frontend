@@ -159,68 +159,7 @@ const BookingHistoryCard = (props: IHistory) => {
               </Text>
             </Flex>
           </div>
-
-          {/* <Flex mt={"20px"} justify={"space-between"} align={"center"}>
-            <Text fw={600} style={{ fontSize: "30px" }}>
-              ${props.productPricePerDay} / Day
-            </Text>
-            <Button w={"50%"} onClick={() => navigate(`/details/${props._id}`)}>
-              Details
-            </Button>
-          </Flex> */}
         </Card>
-        // <Card shadow="sm" padding="sm" radius="md" withBorder mb={20}>
-        //   <img
-        //     src={image}
-        //     alt=""
-        //     width={"100%"}
-        //     height={150}
-        //     style={{ borderRadius: "10px" }}
-        //   />
-        //   <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-        //     <Flex gap={20} align={"center"}>
-        //       <Badge w={"20%"}>{props.product.productBrand}</Badge>
-        //       <Text fw={700} fs={"xl"}>
-        //         {props.product.productName}
-        //       </Text>
-        //     </Flex>
-        //     <Flex gap={20} align={"center"}>
-        //       <Pen size={20} />
-        //       <Text fw={700} fs={"xl"}>
-        //         {formatDateWithTime(props.createdAt)}
-        //       </Text>
-        //     </Flex>
-        //     <Flex gap={20} align={"center"}>
-        //       <Calendar size={20} />
-        //       <span style={{ display: "inline-flex" }}>
-        //         <Text fw={500} fs={"xl"}>
-        //           From&nbsp;
-        //         </Text>
-        //         <Text fw={700} fs={"xl"}>
-        //           {formatDateWithTime(props.startDate)}&nbsp;
-        //         </Text>
-        //         <Text fw={500} fs={"xl"}>
-        //           To&nbsp;
-        //         </Text>
-        //         <Text fw={700} fs={"xl"}>
-        //           {formatDateWithTime(props.endDate)}&nbsp;
-        //         </Text>
-        //       </span>
-        //     </Flex>
-        //     <Flex gap={20} align={"center"}>
-        //       <Ambulance size={20} />
-        //       <Text fw={700} fs={"xl"}>
-        //         {props.emergencyContact}
-        //       </Text>
-        //     </Flex>
-        //   </div>
-
-        //   <div>
-        //     <Button w={"100%"} onClick={() => setOpen(true)}>
-        //       Booking Details
-        //     </Button>
-        //   </div>
-        // </Card>
       )}
 
       <BookingDetailsModal

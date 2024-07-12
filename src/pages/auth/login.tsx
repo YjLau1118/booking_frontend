@@ -72,7 +72,6 @@ const Login = () => {
     if (loginForm.values.email && loginForm.values.password) {
       signIn(loginForm.values.email, loginForm.values.password)
         .then((res) => {
-          console.log(res);
           if (res.data.isAdmin) {
             navigate("/dashboard");
           } else {
@@ -100,7 +99,6 @@ const Login = () => {
     (state: RootState) => state.auth.refreshToken
   );
 
-  console.log(refreshToken);
   return (
     <form onSubmit={loginForm.onSubmit(() => handleLogin())}>
       <div className={styles.container}>

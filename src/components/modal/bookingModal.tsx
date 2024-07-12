@@ -70,7 +70,6 @@ const BookingModal = (props: IProps) => {
   const [step, setStep] = useState<number>(1);
   useEffect(() => {
     getUserDetailsById(id).then((res) => {
-      console.log(res.data);
       setUser(res.data);
     });
   }, [id]);
@@ -88,8 +87,6 @@ const BookingModal = (props: IProps) => {
     }
   }, [date, props.product.productPricePerDay]);
 
-  console.log("date", date[0]);
-
   useEffect(() => {
     if (!props.opened) {
       setStep(1);
@@ -103,7 +100,6 @@ const BookingModal = (props: IProps) => {
     try {
       if (props.product && emergency !== "" && date[0] && date[1]) {
         await createBooking(props.product._id, date[0], date[1], emergency);
-        console.log("Booking successful");
         setStep(2);
         setTimeout(() => {
           props.onClose();

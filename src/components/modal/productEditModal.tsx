@@ -139,8 +139,6 @@ const ProductEditModal = (props: IProps) => {
     { value: "Auto", label: "Auto" },
   ];
 
-  console.log(convertedFiles);
-
   const handleDisable = () => {
     const values = updateForm.values;
     return !(
@@ -214,7 +212,6 @@ const ProductEditModal = (props: IProps) => {
       }
     }
 
-    console.log(ids);
     return ids;
   };
 
@@ -238,7 +235,6 @@ const ProductEditModal = (props: IProps) => {
         updateForm.values.productFuelType,
         updateForm.values.productPricePerDay!
       );
-      console.log(res);
       setOpenSuccess(true);
       props.onProductUpdate();
       props.onClose();

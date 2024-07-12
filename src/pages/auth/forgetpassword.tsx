@@ -95,7 +95,6 @@ const ForgetPassword = () => {
     if (forgetForm.values.email) {
       forgetPassword(forgetForm.values.email)
         .then((res) => {
-          console.log(res);
           nextStep();
           setDisableStep1(false);
         })
@@ -116,7 +115,6 @@ const ForgetPassword = () => {
     if (verifyForm.values.pin) {
       verifyPin(forgetForm.values.email, verifyForm.values.pin)
         .then((res) => {
-          console.log(res);
           nextStep();
         })
         .catch((err: any) => {
@@ -136,7 +134,6 @@ const ForgetPassword = () => {
     if (resetForm.values.password && resetForm.values.confirmpwd) {
       resetPassword(forgetForm.values.email, resetForm.values.password)
         .then((res) => {
-          console.log(res);
           navigate("/login");
         })
         .catch((err: any) => {
@@ -150,7 +147,6 @@ const ForgetPassword = () => {
         });
     }
   };
-  console.log(verifyForm.errors.pin);
 
   const validatePassword = (a: string, b: string) => {
     return !(a === b);

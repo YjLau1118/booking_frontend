@@ -159,7 +159,6 @@ const ProductCreateModal = (props: IProps) => {
         createForm.values.productFuelType,
         createForm.values.productPricePerDay!
       );
-      console.log(res);
       setOpenSuccess(true);
       props.onClose();
       props.onProductCreate();

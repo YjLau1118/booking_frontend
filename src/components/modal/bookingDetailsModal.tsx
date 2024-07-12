@@ -59,7 +59,6 @@ const BookingDetailsModal = (props: IProps) => {
   const [totalPrice, setTotalPrice] = useState<number>(0);
   useEffect(() => {
     getBookingById(props.id).then((res) => {
-      console.log(res.data);
       setBookingDetail(res.data);
     });
   }, [props.id]);
@@ -67,7 +66,6 @@ const BookingDetailsModal = (props: IProps) => {
   useEffect(() => {
     if (bookingDetail) {
       getUserDetailsById(bookingDetail?.user).then((res) => {
-        console.log(res.data);
         setUser(res.data);
       });
     }

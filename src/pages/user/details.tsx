@@ -75,7 +75,6 @@ const Details = () => {
 
     fetchImages();
   }, [product]);
-  console.log(images);
 
   const getImageSlides = () => {
     return images.map((item, index) => (

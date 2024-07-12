@@ -75,7 +75,6 @@ const SignUp = () => {
         signupForm.values.phone
       )
         .then((res) => {
-          console.log(res);
           setOpenSuccess(true);
           setTimeout(() => {
             setOpenSuccess(false);

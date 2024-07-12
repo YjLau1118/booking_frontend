@@ -70,7 +70,6 @@ const ProductDetailsModal = (props: IProps) => {
       });
     }
   }, [props.id]);
-  console.log(props.id);
   useEffect(() => {
     const fetchImages = async () => {
       if (product && product.productImage) {
@@ -85,7 +84,6 @@ const ProductDetailsModal = (props: IProps) => {
 
     fetchImages();
   }, [product]);
-  console.log(product);
   const getImageSlides = () => {
     return images.map((item, index) => (
       <Carousel.Slide key={index}>

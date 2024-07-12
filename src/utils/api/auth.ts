@@ -27,7 +27,6 @@ export const signIn = async(email: string, password: string) => {
     }
     throw new Error(data.message);
   }
-  console.log(data);
   return data;
 }
 
@@ -59,7 +58,6 @@ export const signUp = async(username: string, email: string, password: string, p
     }
     throw new Error(data.message);
   }
-  console.log(data);
   return data;
 }
 
@@ -88,7 +86,6 @@ export const forgetPassword = async(email: string) => {
     }
     throw new Error(data.message);
   }
-  console.log(data);
   return data;
 }
 
@@ -118,7 +115,6 @@ export const verifyPin = async(email: string, pin: string) => {
     }
     throw new Error(data.message);
   }
-  console.log(data);
   return data;
 }
 
@@ -148,7 +144,6 @@ export const resetPassword = async(email: string, password: string) => {
     }
     throw new Error(data.message);
   }
-  console.log(data);
   return data;
 }
 
@@ -201,6 +196,5 @@ export const signout = async() => {
     }
     throw new Error(data.message);
   }
-  console.log(data);
   return data;
 }

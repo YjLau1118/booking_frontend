@@ -108,7 +108,6 @@ const HomePage = () => {
   );
 
   const fetchProductList = async (newPage: number) => {
-    // Check if refresh token is present
     if (!refreshToken) {
       console.log("No refresh token found, skipping API call");
       return;

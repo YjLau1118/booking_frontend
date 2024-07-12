@@ -28,7 +28,6 @@ export const createBooking = async(product: string, startDate: Date, endDate: Da
     }
     throw new Error(data.message);
   }
-  console.log(data);
   return data;
 }
 
