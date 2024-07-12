@@ -1,15 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import { AppShell, Burger, MantineProvider } from "@mantine/core";
+import Header from "./components/header";
+import { Provider } from "react-redux";
+import store from "./store/index";
+import AuthProtector from "./components/auth/protector";
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <MantineProvider>
+        <BrowserRouter>
+          <AuthProtector>
+            <AppShell header={{ height: 70 }}>
+              <AppShell.Header
+                style={{
+                  borderBottom: "none",
+                }}
+              >
+                <Header />
+              </AppShell.Header>
+              <AppShell.Main>
+                <App />
+              </AppShell.Main>
+            </AppShell>
+          </AuthProtector>
+        </BrowserRouter>
+      </MantineProvider>
+    </Provider>
   </React.StrictMode>
 );
 

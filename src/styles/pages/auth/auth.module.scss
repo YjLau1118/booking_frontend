@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainTitle {
+  font-size: 50px!important;
+  font-weight: 900!important;
+  text-align: center!important;
+  line-height: normal!important;
+}
+
+.subTitle {
+  font-size: 40px!important;
+  font-weight: 700!important;
+  text-align: center!important;
+  line-height: normal!important;
+}
