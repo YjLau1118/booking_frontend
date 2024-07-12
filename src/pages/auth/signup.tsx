@@ -100,7 +100,7 @@ const SignUp = () => {
     <form onSubmit={signupForm.onSubmit(() => handleSignUp())}>
       <div className={styles.container}>
         <Text className={styles.mainTitle} style={{ marginBottom: "3rem" }}>
-          Car Booking Systems
+          Go Car
         </Text>
         <Text className={styles.subTitle} style={{ marginBottom: "3rem" }}>
           Register

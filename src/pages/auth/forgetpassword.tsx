@@ -157,7 +157,7 @@ const ForgetPassword = () => {
         <form onSubmit={forgetForm.onSubmit(() => handleForgetPassword())}>
           <div className={styles.container}>
             <Text className={styles.mainTitle} style={{ marginBottom: "3rem" }}>
-              Car Booking Systems
+              Go Car
             </Text>
             <Text className={styles.subTitle} style={{ marginBottom: "5rem" }}>
               Reset Password
@@ -217,7 +217,7 @@ const ForgetPassword = () => {
         <form onSubmit={verifyForm.onSubmit(() => handleVerifyPin())}>
           <div className={styles.container}>
             <Text className={styles.mainTitle} style={{ marginBottom: "3rem" }}>
-              Car Booking Systems
+              Go Car
             </Text>
             <Text className={styles.subTitle} style={{ marginBottom: "5rem" }}>
               Verify Pin
@@ -281,7 +281,7 @@ const ForgetPassword = () => {
         <form onSubmit={resetForm.onSubmit(() => handleResetPassword())}>
           <div className={styles.container}>
             <Text className={styles.mainTitle} style={{ marginBottom: "3rem" }}>
-              Car Booking Systems
+              Go Car
             </Text>
             <Text className={styles.subTitle} style={{ marginBottom: "5rem" }}>
               Reset Password
